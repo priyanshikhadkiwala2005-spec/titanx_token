@@ -39,12 +39,12 @@ export const token = {
  intro: 'TITANX is created through a decentralized smart contract. Its token creation, joining mechanism, withdrawal and burning processes follow predefined contract rules.',
  detailsTitle: 'Complete Token Details'}
 export const tokenOverview = [
- ['Token Name','TitanX'],['Token Symbol','TITANX'],['Total Supply','2.10 Crore'],['Total Supply in Numbers','21,000,000'],
+ ['Token Name','TTX'],['Token Symbol','TITANX'],['Total Supply','2.10 Crore'],['Total Supply in Numbers','21,000,000'],
  ['Starting Token Rate','$0.50'],['Open Buy','Not Available'],['Token Creation','Through Joining'],['Joining Method','USDT or TITANX Tokens'],
  ['Withdrawal','Tokens Only'],['Buy Gas Fee','1%'],['Sell Gas Fee','5%'],['Token Burning','95% of Tokens Sold'],
  ['Maximum Burn','50% of Total Supply'],['Maximum Burn Quantity','10,500,000 TITANX']]
 export const tokenStats = [
- ['Token Name','TITANX','TitanX'],
+ ['Token Name','TTX','TitanX'],
  ['Total Supply','21,000,000','TITANX tokens'],
  ['Starting Rate','$0.50','Per TITANX'],
  ['Maximum Burn','10,500,000','50% of Total Supply'],
