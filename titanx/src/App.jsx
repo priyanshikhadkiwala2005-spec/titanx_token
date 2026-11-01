@@ -19,7 +19,7 @@ function Loader({ done }) {
         <div className="relative h-52 w-52 sm:h-64 sm:w-64">
           <motion.div className="absolute inset-0 rounded-full border-2 border-transparent" style={{ borderTopColor: '#22D3EE', borderRightColor: '#8CFF1F' }} animate={{ rotate: 360 }} transition={{ repeat: Infinity, duration: 1.4, ease: 'linear' }} />
           <motion.div className="absolute inset-4 rounded-full border border-transparent" style={{ borderBottomColor: '#1E6BFF', borderLeftColor: '#22D3EE' }} animate={{ rotate: -360 }} transition={{ repeat: Infinity, duration: 2.2, ease: 'linear' }} />
-          <img src="/logo.jpeg" alt="TitanX" className="absolute inset-6 h-[calc(100%-3rem)] w-[calc(100%-3rem)] rounded-full object-cover mix-blend-screen" />
+          <img src="/titanx-ttx.png" alt="TitanX" className="absolute inset-6 h-[calc(100%-3rem)] w-[calc(100%-3rem)] object-contain" />
         </div>
         <div className="mt-8 font-display text-5xl font-bold tabular-nums grad-text">{String(n).padStart(3, '0')}%</div>
         <div className="mt-4 h-1 w-64 max-w-full overflow-hidden rounded bg-white/10"><div className="h-full bg-gradient-to-r from-tx-blue via-tx-cyan to-tx-lime" style={{ width: n + '%' }} /></div>
@@ -34,7 +34,7 @@ function Nav() {
   return (
     <header className="fixed inset-x-0 top-0 z-50 border-b border-white/5 bg-ink/70 backdrop-blur-xl">
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-5">
-        <a href="#home" className="flex items-center gap-3"><img src="/logo.jpeg" alt="" className="h-9 w-9 rounded-md object-cover" /><span className="font-display text-xl font-bold chrome-text">TITAN<span className="grad-text">X</span></span></a>
+        <a href="#home" className="flex items-center gap-3"><img src="/titanx-ttx.png" alt="" className="h-9 w-9 object-contain" /><span className="font-display text-xl font-bold chrome-text">TITAN<span className="grad-text">X</span></span></a>
         <nav className="hidden gap-7 lg:flex">{nav.map((l) => <a key={l} href={'#' + id(l)} className="font-display text-sm text-slate-300 transition hover:text-tx-cyan">{l}</a>)}</nav>
         <button className="grid h-10 w-10 place-items-center lg:hidden" onClick={() => setOpen(!open)} aria-label="Menu" aria-expanded={open}>
           <span className="relative block h-3 w-6"><span className={`absolute left-0 h-0.5 w-6 bg-tx-cyan transition-all ${open ? 'top-1.5 rotate-45' : 'top-0'}`} /><span className={`absolute left-0 h-0.5 w-6 bg-tx-cyan transition-all ${open ? 'top-1.5 -rotate-45' : 'top-3'}`} /></span>
@@ -140,7 +140,7 @@ function CoinFace({ back = false }) {
       <div className="absolute inset-0 rounded-full" style={{ background: 'conic-gradient(from 210deg, #1E6BFF, #22D3EE, #e8f6ff, #8CFF1F, #22D3EE, #1E6BFF)', boxShadow: '0 0 40px rgba(34,211,238,.45)' }} />
       <div className="absolute inset-[3.2%] rounded-full bg-[#04091a]" />
       <div className="absolute inset-[5%] rounded-full border border-tx-cyan/40" style={{ background: 'radial-gradient(circle at 50% 40%, #0b2552 0%, #061233 55%, #030918 100%)', boxShadow: 'inset 0 0 40px rgba(34,211,238,.18)' }} />
-      <img src="/titanx-logo-full.png" alt="TitanX – Rule the Digital Era" draggable="false" className="absolute inset-[7%] h-[86%] w-[86%] select-none" />
+      <img src="/titanx-ttx.png" alt="TitanX – Rule the Digital Era" draggable="false" className="absolute inset-[6%] h-[88%] w-[88%] select-none rounded-full object-cover mix-blend-screen" />
       {/* glass shine that slides across the face */}
       <div className="absolute inset-[5%] overflow-hidden rounded-full">
         <motion.div animate={{ x: ['-130%', '260%'] }} transition={{ repeat: Infinity, duration: 2.6, repeatDelay: 2.2, ease: 'easeInOut' }} className="h-full w-1/3 -skew-x-[20deg] bg-gradient-to-r from-transparent via-white/45 to-transparent" />
@@ -525,12 +525,12 @@ function Footer() {
         <p className="mx-auto mt-3 max-w-2xl text-xs leading-relaxed text-slate-500"><span className="font-semibold text-slate-400">Disclaimer:</span> {f.disclaimer}</p>
       </div>
       <motion.img
-        src="/titanx-wordmark.png" alt="TITANX" draggable="false"
+        src="/titanx-ttx.png" alt="TITANX" draggable="false"
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 1.1, ease }}
-        className="pointer-events-none mx-auto mt-10 block w-[92%] max-w-[1000px] select-none"
+        className="pointer-events-none mx-auto mt-10 block w-[60%] max-w-[500px] select-none"
       />
     </footer>
   )
